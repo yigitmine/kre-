@@ -1,0 +1,185 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Site Metas -->
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>DenemeKres</title>
+
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="~/Contend/css/bootstrap.css" />
+    <!-- progress barstle -->
+    <link rel="stylesheet" href="~/Contend/css/css-circular-prog-bar.css"/>
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet"/>
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <!-- Custom styles for this template -->
+    <link href="~/Contend/css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="~/Contend/css/responsive.css" rel="stylesheet" />
+
+
+
+
+    <link rel="stylesheet" href="~/Contend/css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid footer_section">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand">
+
+                        <span>
+                            Deneme Kreş 
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                    @Html.ActionLink("Anasayfa", "Index", "Butun") <span class="sr-only">(current)</span>
+                                </li>
+                                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")">
+                                    @Html.ActionLink("Hakkımızda", "About", "Butun")
+                                </li>
+                                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Why" ? "active" : "")">
+                                    @Html.ActionLink("Neden Biz", "Why", "Butun")
+                                </li>
+                                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")">
+                                    @Html.ActionLink("İletişim", "Contact", "Butun")
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+
+
+
+    @RenderBody();
+    <section class="info_section layout_padding-top">
+        <div class="info_logo-box">
+            <h2>
+                Deneme Kreş
+            </h2>
+        </div>
+        <div class="container layout_padding2">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>
+                        Tel No
+                    </h5>
+                    <p>
+                        0 (282) 758 22 04
+                    </p>
+                </div>
+            
+
+                <div class="col-md-3">
+                    <h5>
+                        Mail Adresi
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="">
+                                kres@hjka.org.tr
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>
+                        Site Linki
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="">
+                                www.kres.cjukl.org.tr
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="subscribe_container">
+                        <h5>
+                            Size Ulaşalım
+                        </h5>
+                        <div class="form_container">
+                            <form action="">
+                                <input type="email" placeholder="Email adresinizi girin">
+                                <button type="submit">
+                                    Onayla
+                                </button>
+                        
+                        </form>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="social_container">
+
+                <div class="social-box">
+                    <a href="">
+                        <img src="~/Contend/images/fb.png" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="~/Contend/images/twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="~/Contend/images/linkedin.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="~/Contend/images/instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+    </section>
+    <!-- footer section -->
+
+    <script type="~/Contend/text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="~/Contend/text/javascript" src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>
